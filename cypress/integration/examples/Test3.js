@@ -2,7 +2,7 @@
 
 describe("My Third Test Suite", function(){
 
-    it("My Third Test Case", function(){
+    it("My First Test Case", function(){
 
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
 

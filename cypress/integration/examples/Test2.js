@@ -2,7 +2,7 @@
 
 describe("My Second Test Suite", function(){
 
-    it("My Second Test Case", function(){
+    it("My First Test Case", function(){
         //test steps
         cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/");
         cy.get(".search-keyword").type("ca");
