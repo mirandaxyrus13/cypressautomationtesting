@@ -1,5 +1,9 @@
 {
   "name": "EZLoots EZBait",
   "email": "hello@cypress.io",
-  "password": "12345678"
+  "password": "12345678",
+  "gender": "Male",
+  "product_name": ["Blackberry", "Nokia Edge"],
+  "country": "India",
+  "alertMessage": "Success! Thank you! Your order will be delivered in next few weeks :-)."
 }

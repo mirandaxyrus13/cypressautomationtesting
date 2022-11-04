@@ -4,7 +4,7 @@ describe("My Third Test Suite", function(){
 
     it("My First Test Case", function(){
 
-        cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
+        cy.visit(Cypress.env("url") + "/AutomationPractice/");
 
         //Checkboxes
         cy.get("input#checkBoxOption1").check().should("be.checked").and("have.value", "option1");
