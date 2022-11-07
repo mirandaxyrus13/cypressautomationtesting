@@ -13,5 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
+          build: npm install
           start: npm start
+      - name: Cypress Test Execution
+        run: npm run test -- --record --key d61f7938-9c7b-486a-b696-6f9ca19766b0 --reporter mochawesome --spec "cypress/integration/examples/TestAutomation.js" --browser chrome --env url=https://rahulshettyacademy.com --headed
