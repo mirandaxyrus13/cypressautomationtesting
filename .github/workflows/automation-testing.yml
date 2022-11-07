@@ -18,13 +18,8 @@ jobs:
           browser: chrome
           record: true
         env:
-          CYPRESS-RECORD-KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: $GITHUB_SHA
-
-      - name: Output 1
-        run: 
-          echo $GITHUB_SHA
-          echo secrets.CYPRESS_RECORD_KEY
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
       
