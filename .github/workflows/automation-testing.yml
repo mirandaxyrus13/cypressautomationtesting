@@ -1,4 +1,4 @@
-name: Cypress Automation Testing
+name: Cypress Tests
 
 on: [push]
 
@@ -11,9 +11,7 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v4.0.0
         with:
-          build: npm install
+          build: npm run build
           start: npm start
-      - name: Cypress Test Execution
-        run: npm run test -- --record --key d61f7938-9c7b-486a-b696-6f9ca19766b0 --reporter mochawesome --spec "cypress/integration/examples/TestAutomation.js" --browser chrome --env url=https://rahulshettyacademy.com --headed
