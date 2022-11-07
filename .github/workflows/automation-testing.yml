@@ -11,17 +11,14 @@ jobs:
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Record Key
-        run: echo "${{ secrets.CYPRESS_RECORD_KEY }}"
-      - name: Record Key
-        run: echo "${{ secrets.GITHUB_TOKEN }}"
-      - name: Record Key
-        run: echo "${{ secrets.CYPRESS_PROJECT_ID }}"
-      - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
         with:
           spec: cypress/integration/examples/TestAutomation.js
           browser: chrome
+          env:
+            CYPRESS-RECORD-KEY: "d61f7938-9c7b-486a-b696-6f9ca19766b0"
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            CYPRESS_PROJECT_ID: "6jnhcm"
 
 
       
