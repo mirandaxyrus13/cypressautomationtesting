@@ -14,6 +14,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
         with:
-          build: npm run build
-          start: npm run greenKartTest
+          run: npm run greenKartTest
       
