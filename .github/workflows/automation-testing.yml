@@ -17,9 +17,9 @@ jobs:
           browser: chrome
           record: true
         env:
-          CYPRESS-RECORD-KEY: "d61f7938-9c7b-486a-b696-6f9ca19766b0"
+          CYPRESS-RECORD-KEY: d61f7938-9c7b-486a-b696-6f9ca19766b0
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CYPRESS_PROJECT_ID: "6jnhcm"
+          CYPRESS_PROJECT_ID: 6jnhcm
 
 
       
