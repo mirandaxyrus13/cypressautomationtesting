@@ -16,8 +16,8 @@ jobs:
         with:
           spec: cypress/integration/examples/TestAutomation.js
           browser: chrome
-          run: echo "${{ secrets.CYPRESS_RECORD_KEY }}"
-          run: echo "${{ secrets.GITHUB_TOKEN }}"
-          run: echo "${{ secrets.CYPRESS_PROJECT_ID }}"
+        run: echo "${{ secrets.CYPRESS_RECORD_KEY }}"
+        run: echo "${{ secrets.GITHUB_TOKEN }}"
+        run: echo "${{ secrets.CYPRESS_PROJECT_ID }}"
 
       
