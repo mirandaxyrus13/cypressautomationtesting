@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install",
-    "test": "node_modules\\.bin\\cypress run"
+    "build": "npm install --save-dev",
+    "test": "node_modules\\.bin\\cypress run",
+    "greenKartTest": "npm run test -- --record --key d61f7938-9c7b-486a-b696-6f9ca19766b0 --reporter mochawesome --spec cypress/integration/examples/TestAutomation.js --browser chrome --env url=https://rahulshettyacademy.com --headed"
   },
   "author": "",
   "license": "ISC",

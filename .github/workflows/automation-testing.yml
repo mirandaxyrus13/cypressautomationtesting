@@ -15,4 +15,5 @@ jobs:
         uses: cypress-io/github-action@v4.2.0
         with:
           build: npm run build
-          start: npm install cypress --save-dev
+          start: npm run greenKartTest
+      
