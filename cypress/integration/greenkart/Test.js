@@ -4,6 +4,7 @@ describe("My First Test Suite", function(){
 
     it("My First Test Case", function(){
         //test steps
+        // cy.visit(Cypress.env("url"));
         cy.visit(Cypress.env("url") + "/seleniumPractise/#/");
         cy.get(".search-keyword").type("ca");
         cy.wait(2000);

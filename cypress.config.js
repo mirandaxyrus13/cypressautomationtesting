@@ -21,10 +21,14 @@ module.exports = defineConfig({
   projectId: "6jnhcm",
   fixturesFolder: "cypress/fixtures",
   reporter: "mochawesome",
+  retries: {
+    "runMode": 1,
+    "openMode": 3
+  },
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    specPattern: 'cypress/integration/examples/*.js'
+    specPattern: "cypress/integration/**/*.js",
   },
 });
