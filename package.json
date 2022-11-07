@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run",
-    "headTest": "npm run test -- --headed",
-    "chromeTest": "npm run test -- --browser chrome",
-    "parallelTest": "npm run test -- --parallel",
-    "recordDashboardTest": "npm run test -- --record --key d61f7938-9c7b-486a-b696-6f9ca19766b0 --reporter mochawesome",
-    "greenKartTest": "npm run test -- --spec \"cypress/integration/greenkart/*\""
+    "test": "node_modules\\.bin\\cypress run"
   },
   "author": "",
   "license": "ISC",
